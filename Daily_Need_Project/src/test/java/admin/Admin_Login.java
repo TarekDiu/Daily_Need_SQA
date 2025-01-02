@@ -14,11 +14,12 @@ public class Admin_Login extends Base {
 
 		System.out.println(page.title());
 		
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		
 		page.locator("//input[@id = 'email']").fill("admin@gmail.com");
+		Thread.sleep(3000);
 		page.locator("//input[@id = 'password']").fill("admin12345");
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		page.locator("//button[@class = 'btn btn-primary btn-lg btn-block']").click();
 		
 		
